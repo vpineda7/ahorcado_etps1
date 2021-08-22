@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstrainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="87dp"
+        android:text="Ingrese una letra"
+        app:layout_constraintBottom_toTopOf="@+id/tvLetraCorrecta1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPrincipal"
+        android:layout_width="31dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="22dp"
+        android:capitalize="characters"
+        android:ems="1"
+        android:gravity="center"
+        android:inputType="textCapCharacters"
+        android:maxLength="1"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLetraCorrecta3"
+        app:layout_constraintEnd_toEndOf="@+id/tvLetraCorrecta2"
+        app:layout_constraintStart_toEndOf="@+id/tvLetraCorrecta2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="97dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginBottom="64dp"
+        android:background="#040000"
+        android:text="Limpiar"
+        android:textColor="#635D5D"
+        android:textSize="10sp"
+        app:backgroundTint="#C8BDBD"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLetraAhorcado6"
+        app:layout_constraintEnd_toEndOf="@+id/tvLetraAhorcado4"
+        app:layout_constraintStart_toEndOf="@+id/tvLetraAhorcado4"
+        app:layout_constraintTop_toTopOf="@+id/btnVerificar"
+        app:strokeColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="257dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Verificar"
+        app:backgroundTint="#601717"
+        app:layout_constraintEnd_toEndOf="@+id/tvLetraAhorcado6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLetraCorrecta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D3CFCF"
+        android:text=" * "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraCorrecta2"
+        app:layout_constraintEnd_toStartOf="@+id/btnVerificar"
+        app:layout_constraintStart_toStartOf="@+id/btnVerificar"
+        tools:text=" * " />
+
+    <TextView
+        android:id="@+id/tvLetraCorrecta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="31dp"
+        android:background="#D3CFCF"
+        android:text=" * "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerificar"
+        app:layout_constraintStart_toEndOf="@+id/tvLetraCorrecta1"
+        tools:text=" * " />
+
+    <TextView
+        android:id="@+id/tvLetraCorrecta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#D3CFCF"
+        android:text=" * "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraCorrecta2"
+        app:layout_constraintStart_toEndOf="@+id/tvLetraCorrecta2"
+        tools:text=" * " />
+
+    <TextView
+        android:id="@+id/tvLetraCorrecta4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D3CFCF"
+        android:text=" * "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraCorrecta3"
+        app:layout_constraintEnd_toEndOf="@+id/btnVerificar"
+        app:layout_constraintStart_toEndOf="@+id/btnVerificar"
+        tools:text=" * " />
+
+    <TextView
+        android:id="@+id/tvLetraAhorcado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:background="#F6EAEA"
+        android:text=" - "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraAhorcado2"
+        app:layout_constraintEnd_toEndOf="@+id/edtPrincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text=" - " />
+
+    <TextView
+        android:id="@+id/tvLetraAhorcado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:background="#F6EAEA"
+        android:text=" - "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraAhorcado3"
+        app:layout_constraintStart_toEndOf="@+id/tvLetraAhorcado1"
+        tools:text=" - " />
+
+    <TextView
+        android:id="@+id/tvLetraAhorcado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="32dp"
+        android:background="#F6EAEA"
+        android:text=" - "
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvLetraAhorcado2"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpiar"
+        tools:text=" - " />
+
+    <TextView
+        android:id="@+id/tvLetraAhorcado4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:background="#F6EAEA"
+        android:text=" - "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraAhorcado3"
+        app:layout_constraintStart_toEndOf="@+id/tvLetraAhorcado3"
+        tools:text=" - " />
+
+    <TextView
+        android:id="@+id/tvLetraAhorcado5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F6EAEA"
+        android:text=" - "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvLetraAhorcado6"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificar"
+        tools:text=" - " />
+
+    <TextView
+        android:id="@+id/tvLetraAhorcado6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#F6EAEA"
+        android:text=" - "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraAhorcado5"
+        app:layout_constraintEnd_toStartOf="@+id/tvLetraAhorcado7"
+        tools:text=" - " />
+
+    <TextView
+        android:id="@+id/tvLetraAhorcado7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#F6EAEA"
+        android:text=" - "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraAhorcado6"
+        app:layout_constraintEnd_toStartOf="@+id/tvLetraAhorcado8"
+        tools:text=" - " />
+
+    <TextView
+        android:id="@+id/tvLetraAhorcado8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:background="#F6EAEA"
+        android:text=" - "
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvLetraAhorcado7"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text=" - " />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="            "
+        app:layout_constraintEnd_toEndOf="@+id/tvLetraAhorcado4"
+        app:layout_constraintStart_toEndOf="@+id/tvLetraAhorcado4"
+        app:layout_constraintTop_toBottomOf="@+id/tvLetraAhorcado5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
